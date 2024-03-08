@@ -15,13 +15,13 @@ const Carousel = () => {
         <div className="embla">
             <EmblaCarousel ref={carouselRef} className="embla__viewport">
                 <div className="embla__container">
-                    <img src="image1.jpg" alt="Image 1" className="embla__slide" />
+                    <img src="./assets/test1" alt="Image 1" className="embla__slide" />
                 </div>
                 <div className="embla__container">
-                    <img src="image2.jpg" alt="Image 2" className="embla__slide" />
+                    <img src="./assets/test2" alt="Image 2" className="embla__slide" />
                 </div>
                 <div className="embla__container">
-                    <img src="image3.jpg" alt="Image 3" className="embla__slide" />
+                    <img src="./assets/test2" alt="Image 3" className="embla__slide" />
                 </div>
             </EmblaCarousel>
         </div>

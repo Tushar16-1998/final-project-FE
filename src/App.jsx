@@ -5,7 +5,7 @@ import './App.css'
 //import './components/carousel'
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
     <>
