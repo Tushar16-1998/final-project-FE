@@ -31,7 +31,7 @@ function ReqForm() {
             notes
         }
 
-        axios.post(`${API_URL}/req`, reqBody)
+        axios.post(`${API_URL}/req/req`, reqBody)
              .then((response)=>{
                  console.log(response)
                  alert('Request sent!')
@@ -44,7 +44,7 @@ function ReqForm() {
                  setDisabilitys("");
                  setNotes("");
              })  
-}}
+}
 
 return(
     <div>
@@ -71,7 +71,8 @@ return(
 
         
     </div>
-)
+);
+};
 
 
 
