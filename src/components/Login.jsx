@@ -97,12 +97,12 @@ function Login() {
       .then((response) => {
         saveToken(response.data.authToken);
         authenticateUser();
+        navigate("/mainpage");
         // Uncomment the following line if you plan to use useNavigate()
         // navigate("/mainpage");
       })
       .catch((error) => {
-        const errorDescription = error.data.message;
-        setError(errorDescription);
+        setError(error.response.data.message);
       });
   };
 

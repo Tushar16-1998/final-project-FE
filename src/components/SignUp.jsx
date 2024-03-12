@@ -174,7 +174,7 @@ function Signup() {
         <div>
           <button type="submit">Sign Up</button>
         </div>
-        {error && <p>{error}</p>}
+          {error && <p>{error}</p>}
       </form>
     </div>
   );
