@@ -27,15 +27,13 @@ function HomePage() {
             <div className="space-y-4">
                 <Link
                     to="/signup"
-                    className="bg-blue-500 hover:white text-white font-semibold py-2 px-4 rounded inline-block"
-                >
+                    className="bg-blue-500 hover:white text-white font-semibold py-2 px-4 rounded inline-block">
                     Sign Up
                 </Link>
                 <div className="h-4"></div> {/* Adding some space */}
                 <Link
                     to="/login"
-                    className="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded inline-block"
-                >
+                    className="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded inline-block">
                     Login
                 </Link>
             </div>
