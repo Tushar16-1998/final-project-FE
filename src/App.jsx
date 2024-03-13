@@ -6,6 +6,7 @@ import HomePage from './pages/HomePage'
 import MainPage from './pages/MainPage'
 import ListForm from './components/ListForm'
 import ReqForm from './components/ReqForm';
+import DetailsPage from './components/DetailsPage';
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/mainpage" element={<MainPage />} />
         <Route path="/listform" element={<ListForm />} />
+        <Route path="/details/:id" element={<DetailsPage />} />
         <Route path="/reqform" element={<ReqForm />} />
 
       </Routes>

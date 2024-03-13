@@ -71,13 +71,13 @@ function MainPage() {
                             <p className="mb-2">Type: {vehicle.type}</p>
                             <p className="mb-2">Year: {vehicle.year}</p>
                             <p className="mb-2">Average Price per day: ${vehicle.price}</p>
+                            <Link to='/listform'> Select </Link>
                         </div>
                     ))
                 ) : (
                     <p className="text-red-500">No vehicles found</p>
                 )}
             </div>
-            <Link to='/listform'> Select </Link>
         </div>
     );
 }
