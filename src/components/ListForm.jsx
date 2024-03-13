@@ -131,7 +131,7 @@ const ListForm = () => {
             <h3>{entry.disabilities}</h3>
             <h3>{entry.notes}</h3>
             <button onClick={() => editEntry(entry.id)}>Edit</button>
-            <button onClick={() => deleteEntry(entry.id)}>Delete</button>)
+            <button onClick={() => deleteEntry(entry.id)}>Delete</button>
           </>
         )}
       </div>
@@ -139,3 +139,4 @@ const ListForm = () => {
   );
   // Get all the existing entries
 };
+export default ListForm;

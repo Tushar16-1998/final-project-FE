@@ -5,7 +5,7 @@ import './App.css'
 import SignUp from './components/SignUp'
 import Login from "./components/Login";
 import { Routes, Route } from 'react-router-dom'
-import HomePage from './pages/HomePage'
+import HomePage from './Pages/HomePage'
 
 function App() {
 
