@@ -15,7 +15,7 @@ const vehiclesData = [
     { id: 7, type: 'Premium Car', brand: 'BMW', model: '5 Series', year: 2021, price: 120, imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_a-U2R3YXzhVivxUgqe4HhkLKCmugXKYrsQNcw4hXIDSSA2voMR8gZrrcXd_pkAgtXyk&usqp=CAU' },
     { id: 8, type: 'Premium Car', brand: '4L', model: 'V8', year: 2022, price: 350, imageUrl: 'https://thumbs.web.sapo.io/?W=800&H=0&delay_optim=1&epic=NTk41hyy577gu7h7gj9I3+46gyP4+gxcp62aGeXdKgR3CJqGMpxEtlQh+pDUlnRPS8ftXpI6yCb4exw00WGg04aQ+c03yIQ1EmaL+QDb0vygdMc=' },
     { id: 9, type: 'Boat', brand: 'Bayliner', model: 'Element E16', year: 2022, price: 250, imageUrl: 'https://images.boattrader.com/resize/1/73/49/8557349_20230511074656691_1_XLARGE.jpg' },
-    { id: 10, type: 'plane', brand: 'Swat Cat', model: "custom", year: 2024, price: 500, imageUrl: 'https://static.wikia.nocookie.net/vsbattles/images/7/77/Turbokat_02.jpg/revision/latest?cb=20170129174632' },
+    { id: 10, type: 'plane', brand: 'Swat Cat', model: "custom", year: 2024, price: 500, imageUrl: 'https://static.wikia.nocookie.net/swatkats/images/b/b4/SWAT_s1e01_17-38.jpg/revision/latest?cb=20140508201016' },
     { id: 11, type: 'tank', brand: 'Batman', model: "custom", year: 2021, price: 899, imageUrl: 'https://img.freepik.com/premium-photo/close-up-tank-from-game-batman-arkham-knight_883586-9313.jpg' },
     { id: 12, type: 'golfcart', brand: 'Old man', model: "V8", year: 2023, price: 699, imageUrl: 'https://4.imimg.com/data4/EY/WS/MY-18726492/golf-cart-eight-seater-eq9062-v8.jpg' },
 

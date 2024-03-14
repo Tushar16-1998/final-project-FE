@@ -20,6 +20,7 @@ function ReqForm() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        
 
         const reqBody = {
             id: Math.random().toString(16).slice(2),
@@ -47,6 +48,11 @@ function ReqForm() {
                 setNotes("");
                 navigate("/listform");
             })
+            // send email 
+            const emailContent = `Destination: ${destination}\nPassengers: ${passangers}\nDates: From ${date1} to ${date2}\nEmail: ${email}\nKids: ${kids}\nDisabilities: ${disabilitys}\nNotes: ${notes}`;
+            const mailtoLink = `mailto:dfbamaral@gmail.com?subject=New Request&body=${encodeURIComponent(emailContent)}`;
+            window.location.href = mailtoLink;
+            
     }
 
     return (
