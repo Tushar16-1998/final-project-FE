@@ -54,19 +54,19 @@ import image2 from '../assets/2.png';
 
 function HomePage() {
     return (
-        <div className="flex flex-col items-center justify-center h-screen">
+        <div className="flex flex-col items-center justify-center h-screen container mx-auto flex justify-between items-center">
             <h1 className="text-3xl font-bold mb-8">Welcome to RentAssist</h1>
             <div className="space-y-4">
                 <div className="carousel w-full">
                     <div id="slide1" className="carousel-item relative w-full">
-                        <img src={image1} className="w-full" alt="Slide 1" />
+                        <img src={image1} className="w-full" alt="Slide 1" style="width: 50%; height: auto;"/>
                         <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                             <a href="#slide4" className="btn btn-circle">❮</a>
                             <a href="#slide2" className="btn btn-circle">❯</a>
                         </div>
                     </div>
                     <div id="slide2" className="carousel-item relative w-full">
-                        <img src={image2} className="w-full" alt="Slide 2" />
+                        <img src={image2} className="w-full" alt="Slide 2" style="width: 50%; height: auto;"/>
                         <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                             <a href="#slide1" className="btn btn-circle">❮</a>
                             <a href="#slide3" className="btn btn-circle">❯</a>
