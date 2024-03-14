@@ -121,46 +121,50 @@ function MainPage() {
     });
 
     return (
-        <div className="container mx-auto p-8 bg-orange-100 text-blue-900">
+        <div className="bg-gradient-to-b from-orange-200 to-orange-100 min-h-screen p-8">
             <Navbar />
-            <h1 className="text-4xl font-semibold mb-8 text-center">Welcome to Our Vehicle Rental Service</h1>
-            <div className="flex justify-between mb-8 items-center">
-                <input
-                    type="text"
-                    placeholder="Search by brand..."
-                    value={searchTerm}
-                    onChange={handleSearchChange}
-                    className="input input-bordered w-full md:w-1/2 mr-4"
-                />
-                <select
-                    value={filterPrice}
-                    onChange={handleFilterChange}
-                    className="input input-bordered w-full md:w-1/4"
-                >
-                    <option value="">All Prices</option>
-                    <option value="50">Less than $50</option>
-                    <option value="100">Less than $100</option>
-                    <option value="150">Less than $150</option>
-                    <option value="200">Less than $200</option>
-                    <option value="250">Less than $250</option>
-                </select>
+            <div className="max-w-5xl mx-auto">
+                <h1 className="text-4xl font-bold mb-8 text-center text-blue-900">Welcome to Our Vehicle Rental Service</h1>
+                <div className="flex justify-between mb-8 items-center">
+                    <input
+                        type="text"
+                        placeholder="Search by brand..."
+                        value={searchTerm}
+                        onChange={handleSearchChange}
+                        className="input input-bordered w-full md:w-1/2 mr-4"
+                    />
+                    <select
+                        value={filterPrice}
+                        onChange={handleFilterChange}
+                        className="input input-bordered w-full md:w-1/4"
+                    >
+                        <option value="">All Prices</option>
+                        <option value="50">Less than $50</option>
+                        <option value="100">Less than $100</option>
+                        <option value="150">Less than $150</option>
+                        <option value="200">Less than $200</option>
+                        <option value="250">Less than $250</option>
+                    </select>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                    {filteredVehicles.map(vehicle => (
+                        <div key={vehicle.id} className="bg-white rounded-lg p-6 shadow-md transition-all duration-300 hover:shadow-xl">
+                            <img src={vehicle.imageUrl} alt={`${vehicle.brand} - ${vehicle.model}`} className="w-full h-48 object-cover rounded-md mb-4" />
+                            <h2 className="text-lg font-semibold mb-2 text-blue-900">{vehicle.brand} - {vehicle.model}</h2>
+                            <p className="text-sm text-blue-700">Type: {vehicle.type}</p>
+                            <p className="text-sm text-blue-700">Year: {vehicle.year}</p>
+                            <p className="text-sm text-blue-700">Average Price per day: ${vehicle.price}</p>
+                            <div className="flex justify-between mt-4">
+                                <Link to="/reqform" className="btn btn-outline btn-sm bg-orange-400 text-white hover:bg-orange-500 hover:text-white">Select</Link>
+                                <Link to="/listform" className="btn btn-outline btn-sm bg-blue-400 text-white hover:bg-blue-500 hover:text-white">Update</Link>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+                {filteredVehicles.length === 0 && (
+                    <p className="text-red-500 mt-4 text-center">No vehicles found</p>
+                )}
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-                {filteredVehicles.map(vehicle => (
-                    <div key={vehicle.id} className="border border-blue-500 rounded-md p-6 transition-all duration-300 transform hover:shadow-lg hover:-translate-y-1 hover:border-orange-500">
-                        <img src={vehicle.imageUrl} alt={`${vehicle.brand} - ${vehicle.model}`} className="w-full h-48 object-cover rounded-md mb-4" />
-                        <h2 className="text-lg font-semibold mb-2">{vehicle.brand} - {vehicle.model}</h2>
-                        <p>Type: {vehicle.type}</p>
-                        <p>Year: {vehicle.year}</p>
-                        <p>Average Price per day: ${vehicle.price}</p>
-                        <Link to="/reqform" className="btn btn-outline btn-sm mt-4 bg-white text-blue-900 hover:bg-orange-500 hover:text-white">Select</Link>
-                        <Link to="/listform" className="btn btn-outline btn-sm mt-4 bg-white text-blue-900 hover:bg-orange-500 hover:text-white">Update</Link>
-                    </div>
-                ))}
-            </div>
-            {filteredVehicles.length === 0 && (
-                <p className="text-red-500 mt-4 text-center">No vehicles found</p>
-            )}
         </div>
     );
 }
