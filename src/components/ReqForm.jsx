@@ -145,37 +145,39 @@ function ReqForm() {
     return (
         <div>
             <Navbar />
-            <h2 className="text-3xl font-bold my-4">Add New Entry</h2>
+            <div className="container mx-auto px-4 py-8">
+                <h2 className="text-3xl font-bold my-4">Add New Entry</h2>
 
-            <form onSubmit={handleSubmit} className="space-y-4">
-                <label className="block">Destination:</label>
-                <input type="text" name="destination" value={destination} onChange={(e) => setDestination(e.target.value)} className="input" />
+                <form onSubmit={handleSubmit} className="space-y-4">
+                    <label className="block">Destination:</label>
+                    <input type="text" name="destination" value={destination} onChange={(e) => setDestination(e.target.value)} className="input" />
 
-                <label className="block">Number Passengers:</label>
-                <input type="number" name="passengers" value={passengers} onChange={(e) => setPassengers(e.target.value)} className="input" />
+                    <label className="block">Number Passengers:</label>
+                    <input type="number" name="passengers" value={passengers} onChange={(e) => setPassengers(e.target.value)} className="input" />
 
-                <label className="block">Travel Dates: From - To</label>
-                <div className="flex space-x-2">
-                    <input type="date" name="date1" value={date1} onChange={(e) => setDate1(e.target.value)} className="input" />
-                    <input type="date" name="date2" value={date2} onChange={(e) => setDate2(e.target.value)} className="input" />
-                </div>
+                    <label className="block">Travel Dates: From - To</label>
+                    <div className="flex space-x-2">
+                        <input type="date" name="date1" value={date1} onChange={(e) => setDate1(e.target.value)} className="input" />
+                        <input type="date" name="date2" value={date2} onChange={(e) => setDate2(e.target.value)} className="input" />
+                    </div>
 
-                <label className="block">Email:</label>
-                <input type="email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} className="input" />
+                    <label className="block">Email:</label>
+                    <input type="email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} className="input" />
 
-                <label className="block">Number of kids (if any):</label>
-                <input type="number" name="kids" value={kids} onChange={(e) => setKids(e.target.value)} className="input" />
+                    <label className="block">Number of kids (if any):</label>
+                    <input type="number" name="kids" value={kids} onChange={(e) => setKids(e.target.value)} className="input" />
 
-                <label className="block">Disabilities (if any):</label>
-                <input type="text" name="disabilities" value={disabilities} onChange={(e) => setDisabilities(e.target.value)} className="input" />
+                    <label className="block">Disabilities (if any):</label>
+                    <input type="text" name="disabilities" value={disabilities} onChange={(e) => setDisabilities(e.target.value)} className="input" />
 
-                <label className="block">Notes:</label>
-                <input type="text" name="notes" value={notes} onChange={(e) => setNotes(e.target.value)} className="input" />
+                    <label className="block">Notes:</label>
+                    <input type="text" name="notes" value={notes} onChange={(e) => setNotes(e.target.value)} className="input" />
 
-                <button type='submit' className="btn btn-primary">Send Request</button>
+                    <button type='submit' className="btn btn-primary">Send Request</button>
 
-                <Link to="/mainpage" className="text-blue-500">Back</Link>
-            </form>
+                    <Link to="/mainpage" className="text-blue-500">Back</Link>
+                </form>
+            </div>
         </div>
     );
 }

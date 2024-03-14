@@ -8,6 +8,7 @@ import ListForm from './components/ListForm'
 import ReqForm from './components/ReqForm';
 import DetailsPage from './components/DetailsPage';
 import Navbar from './components/NavBar';
+import About from './components/About';
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
         <Route path="/details/:id" element={<DetailsPage />} />
         <Route path="/reqform" element={<ReqForm />} />
         <Route path="/navbar" element={<Navbar />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </>
   )
