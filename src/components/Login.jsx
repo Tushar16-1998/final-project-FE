@@ -26,7 +26,7 @@ function Login() {
   };
 
   return (
-    <div className="bg-gradient-to-b from-teal-500 to-blue-800 text-white min-h-screen">
+    <div className="min-h-screen flex justify-center items-center bg-gray-100">
       <div className="bg-white p-10 margin-10 rounded-lg shadow-xl">
         <h1 className="text-3xl font-semibold text-center mb-4 text-gray-800">Login</h1>
         <form onSubmit={handleLoginSubmit} className="space-y-4">

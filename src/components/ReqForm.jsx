@@ -137,16 +137,16 @@ function ReqForm() {
                 navigate("/listform");
             });
 
-        const emailContent = `Destination: ${destination}\nPassengers: ${passengers}\nDates: From ${date1} to ${date2}\nEmail: ${email}\nKids: ${kids}\nDisabilities: ${disabilities}\nNotes: ${notes}`;
-        const mailtoLink = `mailto:dfbamaral@gmail.com?subject=New Request&body=${encodeURIComponent(emailContent)}`;
-        window.location.href = mailtoLink;
+        //const emailContent = `Destination: ${destination}\nPassengers: ${passengers}\nDates: From ${date1} to ${date2}\nEmail: ${email}\nKids: ${kids}\nDisabilities: ${disabilities}\nNotes: ${notes}`;
+        //const mailtoLink = `mailto:dfbamaral@gmail.com?subject=New Request&body=${encodeURIComponent(emailContent)}`;
+        //window.location.href = mailtoLink;
     };
 
     return (
         <div className="bg-gradient-to-b from-teal-500 to-blue-800 text-white min-h-screen">
             <Navbar />
             <div className="container mx-auto px-4 py-8">
-                <h2 className="text-3xl font-bold my-4">Add New Entry</h2>
+                <h2 className="text-3xl font-bold my-4">Add a Request</h2>
 
                 <form onSubmit={handleSubmit} className="space-y-4">
                     <label className="block">Destination:</label>
@@ -174,7 +174,7 @@ function ReqForm() {
                     <input type="text" name="notes" value={notes} onChange={(e) => setNotes(e.target.value)} className="input" />
 
                     <button type='submit' className="btn btn-primary">Send Request</button>
-
+                    <br />
                     <Link to="/mainpage" className="text-blue-500">Back</Link>
                 </form>
             </div>
