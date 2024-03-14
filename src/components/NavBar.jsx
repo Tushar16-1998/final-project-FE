@@ -43,12 +43,13 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
+import icon from "../assets/icon1.png"
 
 function Navbar() {
     return (
         <nav className="navbar bg-base-100">
             <div className="container mx-auto flex justify-between items-center">
-                <Link to="/" className="text-grey text-lg font-bold">Your Logo</Link>
+                <Link to="/mainpage" className="text-grey text-lg font-bold"><img src={icon} /></Link>
                 <div className="flex items-center space-x-4">
                     <Link to="/about" className="btn btn-sm btn-primary">About</Link>
                     <Link to="/login" className="btn btn-sm btn-primary">Login</Link>
