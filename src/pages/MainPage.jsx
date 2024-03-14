@@ -58,13 +58,13 @@ function MainPage() {
                         className="input input-bordered w-full md:w-1/4"
                     >
                         <option value="">All Prices</option>
-                        <option value="50">Less than $50</option>
-                        <option value="100">Less than $100</option>
-                        <option value="150">Less than $150</option>
-                        <option value="200">Less than $200</option>
-                        <option value="250">Less than $250</option>
-                        <option value="350">Less than $350</option>
-                        <option value="700">Less than $700</option>
+                        <option value="50">Less than €50</option>
+                        <option value="100">Less than €100</option>
+                        <option value="150">Less than €150</option>
+                        <option value="200">Less than €200</option>
+                        <option value="250">Less than €250</option>
+                        <option value="350">Less than €350</option>
+                        <option value="700">Less than €700</option>
                     </select>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
