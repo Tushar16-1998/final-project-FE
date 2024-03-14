@@ -47,23 +47,25 @@ function Navbar() {
     };
 
     return (
-        <nav className="bg-purple-600 p-4">
-            <div className="container mx-auto flex justify-between items-center">
+        <nav className="bg-gradient-to-r from-purple-400 to-indigo-600 shadow-lg">
+            <div className="container mx-auto px-4 py-3 flex justify-between items-center">
                 {isLoggedIn && (
-                    <h4 className="text-white">{user.name}</h4>
+                    <h4 className="text-white font-semibold">{user.name}</h4>
                 )}
 
-                <div className="flex space-x-4">
-                    <Link to="/about" className="text-white hover:underline">
-                        <button className="btn btn-xs btn-primary">About</button>
+                <div className="space-x-4">
+                    <Link to="/about" className="text-white hover:text-gray-200">
+                        About
                     </Link>
 
-                    <Link to="/mainpage" className="text-white hover:underline">
-                        <button className="btn btn-xs btn-primary">Home</button>
+                    <Link to="/mainpage" className="text-white hover:text-gray-200">
+                        Home
                     </Link>
 
                     {isLoggedIn && (
-                        <button onClick={handleLogout} className="btn btn-xs btn-secondary">Logout</button>
+                        <button onClick={handleLogout} className="text-white hover:text-gray-200 font-semibold">
+                            Logout
+                        </button>
                     )}
                 </div>
             </div>
