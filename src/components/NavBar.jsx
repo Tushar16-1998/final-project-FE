@@ -47,7 +47,7 @@ import icon from "../assets/icon1.png"
 
 function Navbar() {
     return (
-        <nav className="navbar bg-base-100">
+        <nav className="navbar bg-gradient-to-b from-teal-500 to-blue-800 text-white min-h-screen">
             <div className="container mx-auto flex justify-between items-center">
                 <Link to="/mainpage" className="text-grey text-lg font-bold"><img src={icon} /></Link>
                 <div className="flex items-center space-x-4">
