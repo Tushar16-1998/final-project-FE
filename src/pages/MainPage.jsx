@@ -121,9 +121,9 @@ function MainPage() {
     });
 
     return (
-        <div className="bg-gradient-to-b from-orange-500 to-orange-300 text-blue-900 min-h-screen p-8">
+        <div className="bg-gradient-to-b from-teal-500 to-blue-800 text-white min-h-screen">
             <Navbar />
-            <div className="max-w-5xl mx-auto">
+            <div className="max-w-5xl mx-auto p-8">
                 <h1 className="text-4xl font-bold mb-8 text-center">Welcome to Our Vehicle Rental Service</h1>
                 <div className="flex justify-between mb-8 items-center">
                     <input
@@ -155,8 +155,8 @@ function MainPage() {
                             <p>Year: {vehicle.year}</p>
                             <p>Average Price per day: ${vehicle.price}</p>
                             <div className="flex justify-between mt-4">
-                                <Link to="/reqform" className="btn btn-outline btn-sm bg-orange-600 text-white hover:bg-orange-700 hover:text-white">Select</Link>
-                                <Link to="/listform" className="btn btn-outline btn-sm bg-blue-800 text-white hover:bg-blue-900 hover:text-white">Update</Link>
+                                <Link to="/reqform" className="btn btn-outline btn-sm bg-teal-400 text-white hover:bg-teal-500 hover:text-white">Select</Link>
+                                <Link to="/listform" className="btn btn-outline btn-sm bg-blue-600 text-white hover:bg-blue-700 hover:text-white">Update</Link>
                             </div>
                         </div>
                     ))}
