@@ -119,6 +119,17 @@ function Navbar() {
                 {isLoggedIn && (
                     <button onClick={handleLogout} className="btn btn-primary">Logout</button>
                 )}
+                <div className="dropdown">
+                    <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-600 dark:text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 15l7-7 7 7" />
+                        </svg>
+                    </div>
+                    <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box">
+                        <li><button className="btn btn-ghost btn-sm">Light Theme</button></li>
+                        <li><button className="btn btn-ghost btn-sm">Dark Theme</button></li>
+                    </ul>
+                </div>
             </div>
         </div>
     )
