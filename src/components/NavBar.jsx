@@ -106,7 +106,7 @@ function Navbar() {
                 </div>
             </div>
             <div className="navbar-center">
-                <Link to="/" className="btn btn-ghost text-xl">RentAssist</Link>
+                <Link to="/mainpage" className="btn btn-ghost text-xl">RentAssist</Link>
             </div>
             <div className="navbar-end">
                 {isLoggedIn && (
