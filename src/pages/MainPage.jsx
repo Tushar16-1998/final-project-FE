@@ -37,9 +37,9 @@ function MainPage() {
 
     return (
         <div className="container mx-auto p-8">
+            <Navbar />
             <h1 className="text-4xl font-semibold mb-8 text-center">Welcome to Our Vehicle Rental Service</h1>
             <div className="flex justify-between mb-8 items-center">
-                <Navbar />
                 <input
                     type="text"
                     placeholder="Search by brand..."
