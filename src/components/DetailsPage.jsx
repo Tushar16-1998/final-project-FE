@@ -1,10 +1,10 @@
-
-
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useParams, useNavigate, Link } from "react-router-dom";
+import Navbar from "./NavBar";
 
-const API_URL = "http://localhost:5005";
+
+const API_URL = "https://final-project-be-dws5.onrender.com/";
 
 const DetailsPage = () => {
     const [editedEntry, setEditedEntry] = useState(null);
@@ -59,6 +59,7 @@ const DetailsPage = () => {
     return (
         <div>
             <h1>Booking Details</h1>
+            <Navbar />
             {editedEntry && (
                 <div>
                     Destination:

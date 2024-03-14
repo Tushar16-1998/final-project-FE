@@ -23,7 +23,7 @@ import { Link } from 'react-router-dom';
 function HomePage() {
     return (
         <div className="flex flex-col items-center justify-center h-screen">
-            <h1 className="text-3xl font-bold mb-8">Welcome to My App</h1>
+            <h1 className="text-3xl font-bold mb-8">Welcome to RentAssist</h1>
             <div className="space-y-4">
                 <Link
                     to="/signup"

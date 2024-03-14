@@ -16,7 +16,7 @@ function Login() {
     const reqBody = { email, password };
 
     try {
-      const response = await axios.post("http://localhost:5005/auth/login", reqBody);
+      const response = await axios.post("https://final-project-be-dws5.onrender.com/auth/login", reqBody);
       saveToken(response.data.authToken);
       authenticateUser();
       navigate("/mainpage");

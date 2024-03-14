@@ -14,7 +14,7 @@ function Signup() {
     const reqBody = { email, password, name };
 
     axios
-      .post("http://localhost:5005/auth/signup", reqBody)
+      .post("https://final-project-be-dws5.onrender.com/auth/signup", reqBody)
       .then(() => {
         navigate("/login");
       })

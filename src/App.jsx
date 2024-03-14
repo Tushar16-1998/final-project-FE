@@ -7,6 +7,7 @@ import MainPage from './pages/MainPage'
 import ListForm from './components/ListForm'
 import ReqForm from './components/ReqForm';
 import DetailsPage from './components/DetailsPage';
+import Navbar from './components/NavBar';
 
 function App() {
 
@@ -21,7 +22,7 @@ function App() {
         <Route path="/listform" element={<ListForm />} />
         <Route path="/details/:id" element={<DetailsPage />} />
         <Route path="/reqform" element={<ReqForm />} />
-
+        <Route path="/navbar" element={<Navbar />} />
       </Routes>
     </>
   )

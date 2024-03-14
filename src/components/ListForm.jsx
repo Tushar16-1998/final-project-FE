@@ -1,10 +1,9 @@
-// ListForm.js
-
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import Navbar from "./NavBar";
 
-const API_URL = "http://localhost:5005";
+const API_URL = "https://final-project-be-dws5.onrender.com/";
 
 const ListForm = () => {
   const [entries, setEntries] = useState([]);
@@ -19,6 +18,7 @@ const ListForm = () => {
   return (
     <div>
       <h1>List of Bookings</h1>
+      <Navbar />
       <table>
         <thead>
           <tr>
@@ -38,13 +38,14 @@ const ListForm = () => {
             <tr key={entry._id}>
               <td>{entry.destination}</td>
               <td>{entry.passangers}</td>
-              <td>{entry.date1.substring(0,10)}</td>
+              <td>{entry.date1.substring(0, 10)}</td>
               {/* <td>{entry.date2}</td> */}
               <td>{entry.email}</td>
               {/*  <td>{entry.kids}</td>
               <td>{entry.disabilities}</td>
               <td>{entry.notes}</td>*/}
               <td><Link to={`/details/${entry._id}`}>Details</Link></td>
+              <td><Link to={'/mainpage'}>Back</Link></td>
             </tr>
           ))}
         </tbody>
