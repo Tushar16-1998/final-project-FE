@@ -121,10 +121,10 @@ function MainPage() {
     });
 
     return (
-        <div className="bg-gradient-to-b from-orange-200 to-orange-100 min-h-screen p-8">
+        <div className="bg-gradient-to-b from-orange-500 to-orange-300 text-blue-900 min-h-screen p-8">
             <Navbar />
             <div className="max-w-5xl mx-auto">
-                <h1 className="text-4xl font-bold mb-8 text-center text-blue-900">Welcome to Our Vehicle Rental Service</h1>
+                <h1 className="text-4xl font-bold mb-8 text-center">Welcome to Our Vehicle Rental Service</h1>
                 <div className="flex justify-between mb-8 items-center">
                     <input
                         type="text"
@@ -150,13 +150,13 @@ function MainPage() {
                     {filteredVehicles.map(vehicle => (
                         <div key={vehicle.id} className="bg-white rounded-lg p-6 shadow-md transition-all duration-300 hover:shadow-xl">
                             <img src={vehicle.imageUrl} alt={`${vehicle.brand} - ${vehicle.model}`} className="w-full h-48 object-cover rounded-md mb-4" />
-                            <h2 className="text-lg font-semibold mb-2 text-blue-900">{vehicle.brand} - {vehicle.model}</h2>
-                            <p className="text-sm text-blue-700">Type: {vehicle.type}</p>
-                            <p className="text-sm text-blue-700">Year: {vehicle.year}</p>
-                            <p className="text-sm text-blue-700">Average Price per day: ${vehicle.price}</p>
+                            <h2 className="text-lg font-semibold mb-2">{vehicle.brand} - {vehicle.model}</h2>
+                            <p>Type: {vehicle.type}</p>
+                            <p>Year: {vehicle.year}</p>
+                            <p>Average Price per day: ${vehicle.price}</p>
                             <div className="flex justify-between mt-4">
-                                <Link to="/reqform" className="btn btn-outline btn-sm bg-orange-400 text-white hover:bg-orange-500 hover:text-white">Select</Link>
-                                <Link to="/listform" className="btn btn-outline btn-sm bg-blue-400 text-white hover:bg-blue-500 hover:text-white">Update</Link>
+                                <Link to="/reqform" className="btn btn-outline btn-sm bg-orange-600 text-white hover:bg-orange-700 hover:text-white">Select</Link>
+                                <Link to="/listform" className="btn btn-outline btn-sm bg-blue-800 text-white hover:bg-blue-900 hover:text-white">Update</Link>
                             </div>
                         </div>
                     ))}
