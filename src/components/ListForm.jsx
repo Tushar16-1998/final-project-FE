@@ -45,10 +45,10 @@ const ListForm = () => {
               <td>{entry.disabilities}</td>
               <td>{entry.notes}</td>*/}
               <td><Link to={`/details/${entry._id}`}>Details</Link></td>
-              <td><Link to={'/mainpage'}>Back</Link></td>
             </tr>
           ))}
         </tbody>
+        <td><Link to={'/mainpage'}>Back</Link></td>
       </table>
     </div>
   );
