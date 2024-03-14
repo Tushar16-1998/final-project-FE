@@ -5,7 +5,7 @@ import { useNavigate, Link } from 'react-router-dom'
 import Navbar from './NavBar'
 
 
-const API_URL = "https://final-project-be-dws5.onrender.com/"
+const API_URL = "https://final-project-be-dws5.onrender.com"
 
 function ReqForm() {
     const [destination, setDestination] = useState("");

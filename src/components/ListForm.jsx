@@ -3,7 +3,7 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import Navbar from "./NavBar";
 
-const API_URL = "https://final-project-be-dws5.onrender.com/";
+const API_URL = "https://final-project-be-dws5.onrender.com";
 
 const ListForm = () => {
   const [entries, setEntries] = useState([]);
