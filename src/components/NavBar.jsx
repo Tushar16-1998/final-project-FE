@@ -92,9 +92,11 @@ function Navbar() {
     return (
         <nav className="bg-gradient-to-r from-purple-400 to-indigo-600 shadow-lg">
             <div className="container mx-auto px-4 py-3 flex justify-between items-center">
-                <h1 className="text-white text-lg font-semibold">Your Logo</h1>
+                {isLoggedIn && (
+                    <h4 className="text-white font-semibold">{user.name}</h4>
+                )}
 
-                <div className="hidden lg:flex space-x-4">
+                <div className="space-x-4">
                     <Link to="/about" className="text-white hover:text-gray-200">
                         About
                     </Link>
