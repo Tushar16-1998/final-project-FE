@@ -143,7 +143,7 @@ function ReqForm() {
     };
 
     return (
-        <div>
+        <div className="bg-gradient-to-b from-teal-500 to-blue-800 text-white min-h-screen">
             <Navbar />
             <div className="container mx-auto px-4 py-8">
                 <h2 className="text-3xl font-bold my-4">Add New Entry</h2>

@@ -73,10 +73,10 @@ import 'tailwindcss/tailwind.css'; // Import Tailwind CSS styles
 
 function About() {
     return (
-        <div>
+        <div className="bg-gradient-to-b from-teal-500 to-blue-800 text-white min-h-screen">
             <Navbar />
             <section className="p-4">
-                <h3 className="text-3xl font-bold">RENTASSIST</h3>
+                <h3 className="text-3xl font-bold">RENT ASSIST</h3>
                 <p>Contact us for more information!</p>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
                     <article className="bg-white p-4 rounded shadow-md">
