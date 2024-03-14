@@ -148,13 +148,13 @@ function MainPage() {
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
                     {filteredVehicles.map(vehicle => (
-                        <div key={vehicle.id} className="bg-white rounded-lg p-6 shadow-md transition-all duration-300 hover:shadow-xl">
-                            <img src={vehicle.imageUrl} alt={`${vehicle.brand} - ${vehicle.model}`} className="w-full h-48 object-cover rounded-md mb-4" />
-                            <h2 className="text-lg font-semibold mb-2">{vehicle.brand} - {vehicle.model}</h2>
-                            <p>Type: {vehicle.type}</p>
-                            <p>Year: {vehicle.year}</p>
-                            <p>Average Price per day: ${vehicle.price}</p>
-                            <div className="flex justify-between mt-4">
+                        <div key={vehicle.id} className="bg-white rounded-lg p-4 shadow-md transition-all duration-300 hover:shadow-xl">
+                            <img src={vehicle.imageUrl} alt={`${vehicle.brand} - ${vehicle.model}`} className="w-full h-40 object-cover rounded-md mb-2" />
+                            <h2 className="text-lg font-semibold mb-2 text-black">{vehicle.brand} - {vehicle.model}</h2>
+                            <p className="text-black">Type: {vehicle.type}</p>
+                            <p className="text-black">Year: {vehicle.year}</p>
+                            <p className="text-black">Average Price per day: ${vehicle.price}</p>
+                            <div className="flex justify-between mt-2">
                                 <Link to="/reqform" className="btn btn-outline btn-sm bg-teal-400 text-white hover:bg-teal-500 hover:text-white">Select</Link>
                                 <Link to="/listform" className="btn btn-outline btn-sm bg-blue-600 text-white hover:bg-blue-700 hover:text-white">Update</Link>
                             </div>
