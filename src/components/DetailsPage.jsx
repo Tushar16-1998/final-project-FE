@@ -70,12 +70,12 @@ const DetailsPage = () => {
                         className="border border-gray-300 rounded-md p-1 mb-2"
                     />
                     <br />
-                    <label htmlFor="passengers" className="block">Passengers:</label>
+                    <label htmlFor="passangers" className="block">passangers:</label>
                     <input
                         type="number"
-                        id="passengers"
-                        name="passengers"
-                        value={editedEntry.passengers}
+                        id="passangers"
+                        name="passangers"
+                        value={editedEntry.passangers}
                         onChange={handleInputChange}
                         className="border border-gray-300 rounded-md p-1 mb-2"
                     />

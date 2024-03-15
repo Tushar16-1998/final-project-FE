@@ -74,7 +74,7 @@ function MainPage() {
                             <h2 className="text-lg font-semibold mb-2 text-black">{vehicle.brand} - {vehicle.model}</h2>
                             <p className="text-black">Type: {vehicle.type}</p>
                             <p className="text-black">Year: {vehicle.year}</p>
-                            <p className="text-black">Average Price per day: ${vehicle.price}</p>
+                            <p className="text-black">Average Price per day: € {vehicle.price}</p>
                             <div className="flex justify-between mt-2">
                                 <Link to="/reqform" className="btn btn-outline btn-sm bg-teal-400 text-white hover:bg-teal-500 hover:text-white">Select</Link>
                                 <Link to="/listform" className="btn btn-outline btn-sm bg-blue-600 text-white hover:bg-blue-700 hover:text-white">Update</Link>
