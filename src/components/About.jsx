@@ -80,13 +80,14 @@ function About() {
                 <p>Contact us for more information!</p>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
                     <article className="bg-white p-4 rounded shadow-md">
-                        <p className="text-xl font-semibold">Daniel Amaral</p>
+                        <p className="text-xl color-black font-semibold">Daniel Amaral</p>
                         <div className="flex mt-2 space-x-2">
                             <button className="btn btn-primary">
                                 <a href="https://www.linkedin.com/in/daniel-amaral-6b077445/" target="_blank">
                                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/2048px-LinkedIn_icon.svg.png" alt="LinkedIn" className="w-8 h-8" />
                                 </a>
                             </button>
+                            
                             <button className="btn btn-primary">
                                 <a href="https://github.com/dfbamaral" target="_blank">
                                     <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" className="w-8 h-8" />
