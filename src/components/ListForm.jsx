@@ -81,7 +81,7 @@ const ListForm = () => {
       <Navbar />
       <table className="w-full">
         <thead>
-          <tr className="bg-gray-200">
+          <tr className="bg-blue-200">
             <th className="py-2 px-4">Destination</th>
             <th className="py-2 px-4">Passengers</th>
             <th className="py-2 px-4">Start Date</th>
@@ -95,7 +95,7 @@ const ListForm = () => {
         </thead>
         <tbody>
           {entries.map((entry) => (
-            <tr key={entry._id} className="border-b border-blue">
+            <tr key={entry._id} className="border-b border-gray-200">
               <td className="py-2 px-4">{entry.destination}</td>
               <td className="py-2 px-4">{entry.passangers}</td>
               <td className="py-2 px-4">{entry.date1.substring(0, 10)}</td>
