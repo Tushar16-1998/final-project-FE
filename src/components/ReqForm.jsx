@@ -60,20 +60,20 @@ function ReqForm() {
             <h2 className="border-4 border-solid border-black">Add New Entry</h2>
             <form onSubmit={handleSubmit} className="p-4">
                 <label className="block">Destination:<br /></label>
-                <input type="text" name="destination" value={destination} onChange={(e) => setDestination(e.target.value)} className="border-2 border-gray-500 rounded-md p-1 mb-2" /><br />
+                <input type="text" name="destination" value={destination} onChange={(e) => setDestination(e.target.value)} className="border-2 border-gray-500 rounded-md p-1 mb-2 text-blue-500" /><br />
                 <label className="block">Number Passengers:<br /></label>
-                <input type="number" name="passengers" value={passangers} onChange={(e) => setPassangers(e.target.value)} className="border-2 border-gray-500 rounded-md p-1 mb-2" /><br />
+                <input type="number" name="passengers" value={passangers} onChange={(e) => setPassangers(e.target.value)} className="border-2 border-gray-500 rounded-md p-1 mb-2 text-blue-500" /><br />
                 <label className="block">Travel Dates: From - To<br /></label>
-                <input type="date" name="date1" value={date1} onChange={(e) => setDate1(e.target.value)} className="border-2 border-gray-500 rounded-md p-1 mb-2" />
-                <input type="date" name="date2" value={date2} onChange={(e) => setDate2(e.target.value)} className="border-2 border-gray-500 rounded-md p-1 mb-2" /><br />
+                <input type="date" name="date1" value={date1} onChange={(e) => setDate1(e.target.value)} className="border-2 border-gray-500 rounded-md p-1 mb-2 text-blue-500" />
+                <input type="date" name="date2" value={date2} onChange={(e) => setDate2(e.target.value)} className="border-2 border-gray-500 rounded-md p-1 mb-2 text-blue-500" /><br />
                 <label className="block">Email:<br /></label>
-                <input type="email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} className="border-2 border-gray-500 rounded-md p-1 mb-2" /><br />
+                <input type="email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} className="border-2 border-gray-500 rounded-md p-1 mb-2 text-blue-500" /><br />
                 <label className="block">Number of Kids (if any):<br /></label>
-                <input type="number" name="kids" value={kids} onChange={(e) => setKids(e.target.value)} className="border-2 border-gray-500 rounded-md p-1 mb-2" /><br />
+                <input type="number" name="kids" value={kids} onChange={(e) => setKids(e.target.value)} className="border-2 border-gray-500 rounded-md p-1 mb-2 text-blue-500" /><br />
                 <label className="block">Disabilities (if any):<br /></label>
-                <input type="text" name="disabilities" value={disabilitys} onChange={(e) => setDisabilitys(e.target.value)} className="border-2 border-gray-500 rounded-md p-1 mb-2" /><br />
+                <input type="text" name="disabilities" value={disabilitys} onChange={(e) => setDisabilitys(e.target.value)} className="border-2 border-gray-500 rounded-md p-1 mb-2 text-blue-500" /><br />
                 <label className="block">Notes:<br /></label>
-                <input type="text" name="notes" value={notes} onChange={(e) => setNotes(e.target.value)} className="border-2 border-gray-500 rounded-md p-1 mb-2" /><br />
+                <input type="text" name="notes" value={notes} onChange={(e) => setNotes(e.target.value)} className="border-2 border-gray-500 rounded-md p-1 mb-2 text-blue-500" /><br />
                 <button type='submit' className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Send Request</button>
                 <br />
                 <Link to="/mainpage" className="text-blue-300 hover:text-blue-500">Back</Link>

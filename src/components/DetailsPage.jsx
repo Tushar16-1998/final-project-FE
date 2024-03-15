@@ -77,7 +77,7 @@ const DetailsPage = () => {
                         name="passangers"
                         value={editedEntry.passangers}
                         onChange={handleInputChange}
-                        className="border border-gray-300 rounded-md p-1 mb-2"
+                        className="border border-gray-300 rounded-md p-1 mb-2 text-blue-500"
                     />
                     <br />
                     <label htmlFor="date1" className="block">Start Date:</label>
@@ -87,7 +87,7 @@ const DetailsPage = () => {
                         name="date1"
                         value={editedEntry.date1}
                         onChange={handleInputChange}
-                        className="border border-gray-300 rounded-md p-1 mb-2"
+                        className="border border-gray-300 rounded-md p-1 mb-2 text-blue-500"
                     />
                     <br />
                     <label htmlFor="date2" className="block">End Date:</label>
@@ -97,7 +97,7 @@ const DetailsPage = () => {
                         name="date2"
                         value={editedEntry.date2}
                         onChange={handleInputChange}
-                        className="border border-gray-300 rounded-md p-1 mb-2"
+                        className="border border-gray-300 rounded-md p-1 mb-2 text-blue-500"
                     />
                     <br />
                     <label htmlFor="email" className="block">Email:</label>
@@ -107,7 +107,7 @@ const DetailsPage = () => {
                         name="email"
                         value={editedEntry.email}
                         onChange={handleInputChange}
-                        className="border border-gray-300 rounded-md p-1 mb-2"
+                        className="border border-gray-300 rounded-md p-1 mb-2 text-blue-500"
                     />
                     <br />
                     <label htmlFor="kids" className="block">Kids:</label>
@@ -117,7 +117,7 @@ const DetailsPage = () => {
                         name="kids"
                         value={editedEntry.kids}
                         onChange={handleInputChange}
-                        className="border border-gray-300 rounded-md p-1 mb-2"
+                        className="border border-gray-300 rounded-md p-1 mb-2 text-blue-500"
                     />
                     <br />
                     <label htmlFor="disabilities" className="block">Disabilities:</label>
@@ -127,7 +127,7 @@ const DetailsPage = () => {
                         name="disabilities"
                         value={editedEntry.disabilities}
                         onChange={handleInputChange}
-                        className="border border-gray-300 rounded-md p-1 mb-2"
+                        className="border border-gray-300 rounded-md p-1 mb-2 text-blue-500"
                     />
                     <br />
                     <label htmlFor="notes" className="block">Notes:</label>
@@ -137,7 +137,7 @@ const DetailsPage = () => {
                         name="notes"
                         value={editedEntry.notes}
                         onChange={handleInputChange}
-                        className="border border-gray-300 rounded-md p-1 mb-2"
+                        className="border border-gray-300 rounded-md p-1 mb-2 text-blue-500"
                     />
                     <br />
                     <button onClick={handleSave} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-2">Save Changes</button>
