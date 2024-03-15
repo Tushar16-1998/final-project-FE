@@ -81,7 +81,7 @@ const ListForm = () => {
       <Navbar />
       <table className="w-full">
         <thead>
-          <tr className="bg-blue-200">
+          <tr className="bg-blue-200 text-black">
             <th className="py-2 px-4">Destination</th>
             <th className="py-2 px-4">Passengers</th>
             <th className="py-2 px-4">Start Date</th>
