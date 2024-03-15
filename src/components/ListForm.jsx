@@ -76,7 +76,7 @@ const ListForm = () => {
   }, []);
 
   return (
-    <div className="bg-white p-4">
+    <div className="bg-gradient-to-b from-teal-500 to-blue-800 text-white">
       <h1 className="text-3xl font-bold mb-4">List of Bookings</h1>
       <Navbar />
       <table className="w-full">
