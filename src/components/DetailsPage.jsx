@@ -67,7 +67,7 @@ const DetailsPage = () => {
                         name="destination"
                         value={editedEntry.destination}
                         onChange={handleInputChange}
-                        className="border border-gray-300 rounded-md p-1 mb-2 text-blue"
+                        className="border border-gray-300 rounded-md p-1 mb-2 text-blue-500"
                     />
                     <br />
                     <label htmlFor="passangers" className="block">passangers:</label>
