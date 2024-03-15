@@ -204,7 +204,7 @@ const DetailsPage = () => {
     };
 
     return (
-        <div className="bg-white p-4">
+        <div className="bg-gradient-to-b from-teal-500 to-blue-800 text-white">
             <h1 className="text-3xl font-bold mb-4">Booking Details</h1>
             <Navbar />
             {editedEntry && (
@@ -292,6 +292,7 @@ const DetailsPage = () => {
                     <button onClick={handleSave} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-2">Save Changes</button>
                     <button onClick={handleDelete} className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Delete</button>
                     {changesSaved && <p className="text-green-500">Changes saved successfully!</p>}
+                    <br/>
                     <Link to="/mainpage" className="text-blue-500 hover:underline">Back</Link>
                 </div>
             )}
